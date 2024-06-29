@@ -1,0 +1,131 @@
+/* Basic Styles */
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #111; /* Black background */
+   color: #fff; /* White text color */
+}
+
+h1, h2, h3 {
+   margin-bottom: 1em;
+   color: #fff; /* White headings */
+}
+
+a {
+   color: #dc3545; /* Red color for links */
+   text-decoration: none;
+   padding: 5px;
+}
+
+a:hover {
+   color: #fff; /* White color on hover for links */
+   transition: color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+/* Layout & Sections */
+
+.container {
+   display: flex;
+   flex-direction: column; /* Stack elements vertically on larger screens */
+   align-items: center;
+   width: 80%;
+   margin: 0 auto;
+   color: #fff; /* White text for elements inside container */
+}
+
+header,
+nav,
+main,
+footer {
+   padding: 1.5em; /* Consistent padding for sections */
+   background-color: #222; /* Dark grey background for sections */
+}
+
+@media (max-width: 768px) {
+   .container {
+       flex-direction: column; /* Stack elements on smaller screens */
+   }
+}
+
+/* Specific Sections */
+
+header {
+   text-align: center; /* Center text in header */
+}
+
+nav {
+   display: flex;
+   justify-content: space-between; /* Space navigation items horizontally */
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+nav li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+main {
+   flex: 1; /* Main content takes up remaining space */
+}
+
+section {
+   margin: 2em 0;
+   border: 1px solid #dc3545; /* Red border for sections */
+   padding: 1.5em;
+   border-radius: 5px; /* Rounded corners for sections */
+}
+
+/* Typography */
+
+h1 {
+   font-size: 2em;
+   font-weight: bold;
+}
+
+p {
+   font-size: 1em;
+   line-height: 1.5;
+}
+
+/* Microinteractions (Optional) */
+
+.button {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #dc3545; /* Red background for buttons */
+   color: #fff;
+   text-decoration: none;
+   border: none;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+   background-color: #99213b; /* Darker red on hover for buttons */
+}
+
+button {
+ /* Your button styles here */
+ display: inline-block;
+ padding: 10px 20px;
+ background-color: #dc3545; /* Red background for buttons */
+ color: #fff;
+ text-decoration: none;
+ border: none;
+ transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+ background-color: #99213b; /* Darker red on hover for buttons */
+}
+
+.register-input {
+  width: 100%;  /* Set width for all inputs */
+}
+
